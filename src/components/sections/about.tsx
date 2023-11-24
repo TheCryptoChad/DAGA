@@ -1,59 +1,50 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { CircularProgress, Flex, Heading, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 
 export default function About(): JSX.Element {
 	return (
 		<Flex
             id="about"
             bg="#FFFFFF"
+			color="#000000"
+			flexDirection={{ base: "column", lg: "row" }}
             h="100vh"
             w="100vw"
 		>
+			<Flex alignItems="center" flex={1} justifyContent="center" position="relative">
+				<Image src="/about.jpg" borderRadius="20px" boxSize={80} boxShadow="-10px 20px 60px 0px #462B81" zIndex={2}/>
+				<CircularProgress left="40%" size="xs" value={50} color="#2C292E" position="absolute"/>
+			</Flex>
 			<Flex
 				alignItems="flex-start"
+				flex={1}
 				flexDirection="column"
+				justifyContent="center"
 				fontFamily="Namco Regular"
-				w="80%"
 				gap={5}
 			>
-				<Heading>
-					THE SCALABLE
+				<Text>About</Text>
+				<Heading fontFamily="Silkscreen">
+					$DAGA IS A
 					<br />
-					FINANCIAL GAMIFIED
-					<br />
-					PROJECT
+					REVOLUTION.
 				</Heading>
 				<Text>
-					WELCOME TO THE MOST INNOVATIVE AND
+					DAGA is a scalable gamified project powered by AI that involves every holder in a vibrant web3 experience.
 					<br />
-					VIBRANT CRYPTO EXPERIENCE.
-					<br />
-					WELCOME TO DAGA.
+					$DAGA is a token allocated on Ethereum, with a total supply of 100B. ready to change  the crypto space. 
+					Become a DAGA citizen buying the token and enter an scalable ecosystem with no limits.
 				</Text>
-				<Flex
-					alignItems="center"
-					fontFamily="Silkscreen"
-					justifyContent="space-between"
-					w="35%"
-				>
-					<Button
-						_hover={{ bg: "#000000", color: "#FFF900" }}
-						bg="#FFF900"
-						borderRadius="20px"
-						color="#000000"
-						variant="solid"
-					>
-						BUY $DAGA
-					</Button>
-					<Button
-						_hover={{ bg: "#000000", color: "#FFF900" }}
-						bg="#FFF900"
-						borderRadius="20px"
-						color="#000000"
-						variant="solid"
-					>
-						CHART
-					</Button>
-				</Flex>
+				<UnorderedList>
+					<ListItem fontWeight="bold">
+						Contract Renounced
+					</ListItem>
+					<ListItem fontWeight="bold">
+						Liquidity Locked
+					</ListItem>
+					<ListItem fontWeight="bold">
+						Expertise Team
+					</ListItem>
+				</UnorderedList>
 			</Flex>
 		</Flex>
 	);

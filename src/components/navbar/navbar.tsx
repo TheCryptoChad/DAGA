@@ -18,7 +18,7 @@ export default function Navbar(): JSX.Element {
 			justifyContent="space-evenly"
 			position="fixed"
 			w="100%"
-			zIndex={2}
+			zIndex={3}
 		>
 			<Image
 				_hover={{ cursor: "pointer" }}
