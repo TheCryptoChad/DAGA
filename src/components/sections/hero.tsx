@@ -10,8 +10,9 @@ export default function Hero(): JSX.Element {
 			backgroundPosition="center"
 			backgroundSize="cover"
 			justifyContent="center"
+			mt={5}
 			h="100vh"
-			w="100vw"
+			w="100%"
 		>
 			<Flex
 				alignItems="flex-start"
@@ -20,25 +21,27 @@ export default function Hero(): JSX.Element {
 				w="80%"
 				gap={5}
 			>
-				<Heading>
-					THE SCALABLE
+				<Text fontSize="2.2rem">
+					the scalable
 					<br />
-					FINANCIAL GAMIFIED
+					financial gamified
 					<br />
-					PROJECT
-				</Heading>
+					project
+				</Text>
 				<Text>
-					WELCOME TO THE MOST INNOVATIVE AND
+					welcome to the most innovative and
 					<br />
-					VIBRANT CRYPTO EXPERIENCE.
+					vibrant crypto experience
 					<br />
-					WELCOME TO DAGA.
+					welcome to daga
 				</Text>
 				<Flex
 					alignItems="center"
+					flexDirection={{ base: "column", lg: "row" }}
 					fontFamily="Silkscreen"
 					justifyContent="space-between"
-					w="35%"
+					gap={5}
+					w={{base: "90%", lg: "45%" }}
 				>
 					<Button
 						_hover={{ bg: "#000000", color: "#FFF900" }}
@@ -46,6 +49,7 @@ export default function Hero(): JSX.Element {
 						borderRadius="20px"
 						color="#000000"
 						variant="solid"
+						w={{base: "100%", lg: "35%" }}
 					>
 						BUY $DAGA
 					</Button>
@@ -55,11 +59,12 @@ export default function Hero(): JSX.Element {
 						borderRadius="20px"
 						color="#000000"
 						variant="solid"
+						w={{base: "100%", lg: "35%" }}
 					>
 						CHART
 					</Button>
 					<NavbarButton
-						label="About Us --------->"
+						label="About Us ------>"
 						target="about"
 					/>
 				</Flex>

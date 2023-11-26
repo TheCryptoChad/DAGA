@@ -4,10 +4,13 @@ import { ReactNode } from "react";
 type NavbarButtonProps = {
 	label: string;
 	target: string;
+	onClose?: Function;
 };
 
 export default function NavbarButton(props: NavbarButtonProps): JSX.Element {
 	const scrollToTarget = (): void => {
+		if (props.onClose) props.onClose();
+
 		const targetSection: HTMLElement | null = document.getElementById(props.target);
 
 		if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
