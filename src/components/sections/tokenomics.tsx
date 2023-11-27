@@ -27,7 +27,9 @@ export default function Tokenomics(): JSX.Element {
 	return (
 		<Flex
             id="tokenomics"
-            bg="#E13DE4"
+            backgroundImage="/tokenomic-texture.png"
+			backgroundPosition="center"
+			backgroundSize="cover"
 			color="#FFFFFF"
 			flexDirection={{ base: "column", lg: "row" }}
 			h={{base: "full", lg: "100vh" }}

@@ -5,21 +5,17 @@ export default function Roadmap(): JSX.Element {
 		<Flex
 			id="roadmap"
 			alignItems="center"
-			bg="#E13DE4"
+            backgroundImage="/roadmap-texture.png"
+			backgroundPosition="center"
+			backgroundSize="cover"
             flexDirection="column"
             gap={2}
+            pb={8}
             justifyContent="center"
 			w="full"
             color="#FFFFFF"
 		>
-            <Box
-                w="60%"
-                h="0"
-                borderTop="solid 60px #FFFFFF"
-                borderLeft="solid 450px transparent"
-                borderRight="solid 450px transparent"
-            />
-            <Flex flexDirection="column" alignItems="center" my={8}>
+            <Flex flexDirection="column" alignItems="center" mb={8} mt={48}>
                 <Text fontWeight="extrabold">Roadmap</Text>
                 <Heading w={{base: "full", lg:"60%"}} textAlign="center" fontFamily="Silkscreen">A MARKET CAP FINANCIAL GAME THAT BRINGS NEW DEVELOPMENTS</Heading>
             </Flex>
