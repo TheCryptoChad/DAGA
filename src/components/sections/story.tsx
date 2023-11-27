@@ -64,14 +64,13 @@ export default function Story(): JSX.Element {
                             justifySelf="center"
                             p={0}
 							pb={4}
-							minH="100%"
-							minW="100%"
+							alignSelf="stretch"
 						>
 							<Image
 								borderTopRadius="10px"
 								src={card.image}
 								mb={4}
-								h="60%"
+								h="50%"
 							/>
 							<Flex
 								flexDirection="column"
