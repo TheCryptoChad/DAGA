@@ -10,9 +10,11 @@ export default function NavbarButton(props: NavbarButtonProps): JSX.Element {
 	const scrollToTarget = (): void => {
 		if (props.onClose) props.onClose();
 
-		const targetSection: HTMLElement | null = document.getElementById(props.target);
+		setTimeout(() => {
+			const targetSection: HTMLElement | null = document.getElementById(props.target);
 
-		if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
+			if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
+		}, 300);
 	};
 
 	return <Button color="#FFFFFF" fontFamily="Silkscreen" isDisabled={props.label === "Staking"} onClick={scrollToTarget} variant="link">{props.label.toUpperCase()}</Button>;

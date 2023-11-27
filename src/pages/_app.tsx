@@ -10,6 +10,13 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 			body: "Poppins, sans-serif",
 			heading: "Poppins, sans-serif",
 		},
+		styles: {
+			global: {
+				body: {
+					overflowX: "hidden",
+				}
+			}
+		}
 	});
 
 	return (

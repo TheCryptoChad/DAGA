@@ -44,6 +44,7 @@ export default function Hero(): JSX.Element {
 					w={{base: "90%", lg: "45%" }}
 				>
 					<Button
+						isDisabled
 						_hover={{ bg: "#000000", color: "#FFF900" }}
 						bg="#FFF900"
 						borderRadius="20px"
@@ -55,6 +56,7 @@ export default function Hero(): JSX.Element {
 						BUY $DAGA 
 					</Button>
 					<Button
+						isDisabled
 						_hover={{ bg: "#000000", color: "#FFF900" }}
 						bg="#FFF900"
 						borderRadius="20px"
