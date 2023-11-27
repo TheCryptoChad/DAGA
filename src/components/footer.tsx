@@ -1,4 +1,4 @@
-import { Flex, Heading, IconButton, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import NavbarButton from "./navbar/navbar-button";
 
 export default function Footer(): JSX.Element {
@@ -41,8 +41,9 @@ export default function Footer(): JSX.Element {
                         })}
                     </Flex>
                     <Flex>
-                    <Heading fontWeight="extrabold" fontSize="1.2rem">Follow Us On</Heading>
-
+                    <Heading fontWeight="extrabold" fontSize="1.2rem">Contact Us</Heading>
+                        <Flex>
+                        </Flex>
                     </Flex>
                 </SimpleGrid>
             </Flex>

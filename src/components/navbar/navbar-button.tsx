@@ -1,10 +1,9 @@
 import { Button } from "@chakra-ui/button";
-import { ReactNode } from "react";
 
 type NavbarButtonProps = {
 	label: string;
 	target: string;
-	onClose?: Function;
+	onClose?: () => void;
 };
 
 export default function NavbarButton(props: NavbarButtonProps): JSX.Element {

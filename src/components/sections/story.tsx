@@ -1,4 +1,4 @@
-import { Box, Card, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Card, Flex, Heading, Image, SimpleGrid, Text } from "@chakra-ui/react";
 
 export default function Story(): JSX.Element {
 	const cards: { image: string; title: string; description: string }[] = [

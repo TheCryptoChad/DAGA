@@ -1,4 +1,4 @@
-import { Fragment, ReactNode } from "react";
+import { Fragment, type ReactNode } from "react";
 import Navbar from "./navbar/navbar";
 import Head  from "next/head";
 import { Box, Flex } from "@chakra-ui/react";
@@ -15,9 +15,6 @@ export default function Layout(props: LayoutProps): JSX.Element {
                 <title>DAGA - Scalable Financial Gamified Token</title>
                 <meta name="description" content="DAGA is a scalable, financial, gamified project." />
                 <link rel="icon" href="/favicon.ico" />
-                <link href='https://fonts.googleapis.com/css?family=Silkscreen' rel='stylesheet' />
-                <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
-                <link href="https://fonts.cdnfonts.com/css/namco" rel="stylesheet" />
             </Head>
             <Flex 
                 as="main"

@@ -1,4 +1,4 @@
-import { Box, Circle, CircularProgress, Flex, Heading, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, CircularProgress, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 export default function Tokenomics(): JSX.Element {
     const allocations: { color: string; percentage: number; description: string }[] = [

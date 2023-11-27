@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Button, Flex, Text } from "@chakra-ui/react";
 import NavbarButton from "../navbar/navbar-button";
 
 export default function Hero(): JSX.Element {
