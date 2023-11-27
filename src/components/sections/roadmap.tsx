@@ -16,11 +16,11 @@ export default function Roadmap(): JSX.Element {
 			color="#FFFFFF"
 		>
 			<Box
-				w="60%"
+				w="30%"
 				h="0"
 				borderTop="solid 60px #FFFFFF"
-				borderLeft="solid 450px transparent"
-				borderRight="solid 450px transparent"
+				borderLeft={{base:"solid 150px transparent", lg: "solid 450px transparent"}}
+				borderRight={{base:"solid 150px transparent", lg: "solid 450px transparent"}}
 			/>
 			<Flex
 				flexDirection="column"
