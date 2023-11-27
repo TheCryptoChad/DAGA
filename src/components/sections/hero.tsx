@@ -19,6 +19,7 @@ export default function Hero(): JSX.Element {
 				fontFamily="Namco Regular"
 				w="80%"
 				gap={5}
+				color="#FFFFFF"
 			>
 				<Text fontSize="2.2rem">
 					the scalable

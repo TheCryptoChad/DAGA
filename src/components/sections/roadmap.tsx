@@ -10,6 +10,7 @@ export default function Roadmap(): JSX.Element {
             gap={2}
             justifyContent="center"
 			w="full"
+            color="#FFFFFF"
 		>
             <Box
                 w="60%"
