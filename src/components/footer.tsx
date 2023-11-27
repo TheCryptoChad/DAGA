@@ -17,18 +17,19 @@ export default function Footer(): JSX.Element {
             flexDirection="column"
             py={2}
             alignItems="center"
+            pt={8}
         >
             <Flex flex={2} w="70%">
                 <SimpleGrid columns={3} gap={4}>
-                    <Flex flexDirection="column">
-                        <Image src="/tokenomic.png" />
+                    <Flex gap={8} flexDirection="column" alignItems="space-around">
+                        <Image src="/tokenomic.png" w="50%"/>
                         <Text>$DAGA is a coin with no intrinsic value or expectation of financial return. The coin is for entertainment purposes only.</Text>
-                        <Heading>Follow Us On</Heading>
+                        <Heading fontWeight="extrabold" fontSize="1.2rem">Follow Us On</Heading>
                         <Flex>
                         </Flex>
                     </Flex>
-                    <Flex flexDirection="column">
-                        <Heading>Useful Links</Heading>
+                    <Flex justifySelf="center" alignItems="flex-start" justifyContent="flex-start" flexDirection="column">
+                        <Heading mb={5} fontWeight="extrabold" fontSize="1.2rem">Follow Us On</Heading>
                         {Object.entries(sections).map(([key, value]: [string, string], index: number) => {
                             return (
                                 <NavbarButton
@@ -40,7 +41,7 @@ export default function Footer(): JSX.Element {
                         })}
                     </Flex>
                     <Flex>
-                        <Heading>Contact Us</Heading>
+                    <Heading fontWeight="extrabold" fontSize="1.2rem">Follow Us On</Heading>
 
                     </Flex>
                 </SimpleGrid>

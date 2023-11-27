@@ -1,11 +1,19 @@
 import { type AppType } from "next/app";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 import { api } from "~/utils/api";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
+	const theme = extendTheme({
+		fonts: {
+			html: "Poppins, sans-serif",
+			body: "Poppins, sans-serif",
+			heading: "Poppins, sans-serif",
+		},
+	});
+
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			<Component {...pageProps} />
 		</ChakraProvider>
 	);

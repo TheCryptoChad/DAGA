@@ -26,15 +26,20 @@ export default function Tokenomics(): JSX.Element {
 
 	return (
 		<Flex
-            id="about"
-            bg="#FFFFFF"
-			color="#000000"
+            id="tokenomics"
+            bg="#E13DE4"
+			color="#FFFFFF"
 			flexDirection={{ base: "column", lg: "row" }}
-            h="100vh"
+			h={{base: "full", lg: "100vh" }}
             w="100vw"
+			pt={24}
 		>
+			<Text display={{base: "block", lg: "none" }} textAlign="center" fontWeight="extrabold">SUPPLY DISTRIBUTION</Text>
+			<Heading display={{base: "block", lg: "none" }} textAlign="center" fontFamily="Silkscreen">
+				TOKENOMICS
+			</Heading>
 			<Flex alignItems="center" flex={1} justifyContent="center">
-                <Flex alignItems="center" borderRadius="50%" bg="#2C292E" justifyContent="center" h="50%" w="55%" position="relative">
+                <Flex alignItems="center" borderRadius="50%" bg="#2C292E" justifyContent="center" h="350px" w="350px" position="relative">
                     <CircularProgress size="xs" trackColor="transparent" value={85} color="#F2BD21" position="absolute" zIndex={4} />
                     <CircularProgress size="xs" trackColor="transparent" value={90} color="#F4981C" position="absolute" zIndex={3}/>
                     <CircularProgress size="xs" trackColor="transparent" value={96} color="#F05D15" position="absolute" zIndex={2}/>
@@ -47,11 +52,12 @@ export default function Tokenomics(): JSX.Element {
 				flex={1}
 				flexDirection="column"
 				justifyContent="center"
-				fontFamily="Namco Regular"
 				gap={5}
+				alignSelf="center"
+				py={{base: 8, lg: 0}}
 			>
-				<Text>SUPPLY DISTRIBUTION</Text>
-				<Heading fontFamily="Silkscreen">
+				<Text display={{base: "none", lg: "block" }} fontWeight="extrabold">SUPPLY DISTRIBUTION</Text>
+				<Heading display={{base: "none", lg: "block" }} fontFamily="Silkscreen">
 					TOKENOMICS
 				</Heading>
                 {allocations.map((allocation: {color: string; percentage: number; description: string}, index: number) => {
@@ -61,25 +67,15 @@ export default function Tokenomics(): JSX.Element {
                             alignItems="center"
                             justifyContent="space-evenly"
                             flexWrap="wrap"
+							fontFamily="Silkscreen"
                             gap={2}
                         >
                             <Box h="15px" w="15px" bg={allocation.color}/>
-                            <Text textAlign="end">{allocation.percentage}%</Text>
+                            <Text>{allocation.percentage}%</Text>
                             <Text flex={1}>{allocation.description}</Text>
                         </Flex>
                     )
                 })}
-				<UnorderedList>
-					<ListItem fontWeight="bold">
-						Contract Renounced
-					</ListItem>
-					<ListItem fontWeight="bold">
-						Liquidity Locked
-					</ListItem>
-					<ListItem fontWeight="bold">
-						Expertise Team
-					</ListItem>
-				</UnorderedList>
 			</Flex>
 		</Flex>
 	);

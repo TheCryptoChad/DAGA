@@ -10,12 +10,11 @@ export default function Hero(): JSX.Element {
 			backgroundPosition="center"
 			backgroundSize="cover"
 			justifyContent="center"
-			mt={5}
 			h="100vh"
-			w="100%"
+			w="full"
 		>
 			<Flex
-				alignItems="flex-start"
+				alignItems={{base: "center", lg: "flex-start"}}
 				flexDirection="column"
 				fontFamily="Namco Regular"
 				w="80%"
@@ -50,8 +49,9 @@ export default function Hero(): JSX.Element {
 						color="#000000"
 						variant="solid"
 						w={{base: "100%", lg: "35%" }}
+						onClick={() => window.location.href = `https://app.uniswap.org/swap?chain=mainnet&outputCurrency=${process.env.NEXT_PUBLIC_DAGA_ADDRESS}`}
 					>
-						BUY $DAGA
+						BUY $DAGA 
 					</Button>
 					<Button
 						_hover={{ bg: "#000000", color: "#FFF900" }}
@@ -60,6 +60,7 @@ export default function Hero(): JSX.Element {
 						color="#000000"
 						variant="solid"
 						w={{base: "100%", lg: "35%" }}
+						onClick={() => window.location.href = `https://www.dextools.io/app/en/ether/pair-explorer/${process.env.NEXT_PUBLIC_LP_ADDRESS}`}
 					>
 						CHART
 					</Button>

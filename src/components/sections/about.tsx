@@ -7,22 +7,23 @@ export default function About(): JSX.Element {
             bg="#FFFFFF"
 			color="#000000"
 			flexDirection={{ base: "column", lg: "row" }}
-            h="100vh"
-            w="100vw"
+            h={{base: "full", lg: "100vh" }}
+            w="80%"
+			gap={{base: 8, lg: 0 }}
+			pt={24}
 		>
 			<Flex alignItems="center" flex={1} justifyContent="center" position="relative">
-				<Image src="/about.jpg" borderRadius="20px" boxSize={80} boxShadow="-10px 20px 60px 0px #462B81" zIndex={2}/>
-				<CircularProgress left="40%" size="xs" value={50} color="#2C292E" position="absolute"/>
+				<Image ml={-3} src="/about.jpg" borderRadius="20px" boxSize={80} boxShadow="-10px 20px 60px 0px #462B81" zIndex={2}/>
+				<CircularProgress display={{base: "none", lg: "block"}} left="40%" size="xs" value={50} color="#2C292E" position="absolute"/>
 			</Flex>
 			<Flex
-				alignItems="flex-start"
+				alignItems={{ base: "center", lg: "flex-start" }}
 				flex={1}
 				flexDirection="column"
 				justifyContent="center"
-				fontFamily="Namco Regular"
 				gap={5}
 			>
-				<Text>About</Text>
+				<Text fontWeight="extrabold">ABOUT</Text>
 				<Heading fontFamily="Silkscreen">
 					$DAGA IS A
 					<br />
@@ -34,7 +35,7 @@ export default function About(): JSX.Element {
 					$DAGA is a token allocated on Ethereum, with a total supply of 100B. ready to change  the crypto space. 
 					Become a DAGA citizen buying the token and enter an scalable ecosystem with no limits.
 				</Text>
-				<UnorderedList>
+				<UnorderedList alignSelf="flex-start" fontSize="1.2rem">
 					<ListItem fontWeight="bold">
 						Contract Renounced
 					</ListItem>

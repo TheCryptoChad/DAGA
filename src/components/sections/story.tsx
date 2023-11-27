@@ -42,14 +42,16 @@ export default function Story(): JSX.Element {
 			color="#000000"
 			flexDirection="column"
 			justifyContent="flex-start"
-			w="100vw"
+			w="full"
+			py={24}
 		>
-			<Text>THE STORY</Text>
-			<Heading>WELCOME TO THE WORLD OF DAGA</Heading>
+			<Text fontWeight="extrabold">THE STORY</Text>
+			<Heading fontFamily="Silkscreen">WELCOME TO THE<br />WORLD OF DAGA</Heading>
 			<SimpleGrid
-				columns={3}
-                gap={3}
+				columns={{base: 1, lg: 3 }}
+                gap={5}
                 w="80%"
+				pb={8}
 			>
 				{cards.map((card: { image: string; title: string; description: string }, index: number) => {
 					return (
@@ -61,6 +63,7 @@ export default function Story(): JSX.Element {
 							boxShadow="0px 4px 5px 0px #000000"
                             justifySelf="center"
                             p={0}
+							pb={4}
 						>
 							<Image
 								borderTopRadius="10px"
@@ -72,7 +75,7 @@ export default function Story(): JSX.Element {
 								gap={4}
 								px={3}
 							>
-								<Heading>{card.title}</Heading>
+								<Heading fontSize="1.1rem" fontFamily="Silkscreen">{card.title}</Heading>
 								<Text>{card.description}</Text>
 							</Flex>
 						</Card>

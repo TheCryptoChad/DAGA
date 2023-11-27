@@ -16,5 +16,5 @@ export default function NavbarButton(props: NavbarButtonProps): JSX.Element {
 		if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
 	};
 
-	return <Button color="#FFFFFF" fontFamily="Silkscreen" onClick={scrollToTarget} variant="link">{props.label.toUpperCase()}</Button>;
+	return <Button color="#FFFFFF" fontFamily="Silkscreen" isDisabled={props.label === "Staking"} onClick={scrollToTarget} variant="link">{props.label.toUpperCase()}</Button>;
 }

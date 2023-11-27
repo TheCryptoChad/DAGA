@@ -16,6 +16,7 @@ export default function Layout(props: LayoutProps): JSX.Element {
                 <meta name="description" content="DAGA is a scalable, financial, gamified project." />
                 <link rel="icon" href="/favicon.ico" />
                 <link href='https://fonts.googleapis.com/css?family=Silkscreen' rel='stylesheet' />
+                <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
                 <link href="https://fonts.cdnfonts.com/css/namco" rel="stylesheet" />
             </Head>
             <Flex 
