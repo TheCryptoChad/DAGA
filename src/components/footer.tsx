@@ -18,6 +18,7 @@ export default function Footer(): JSX.Element {
             flexDirection="column"
             py={{base: 10, lg: 5}}
             alignItems="center"
+            color="#FFFFFF"
         >
             <Flex flex={2} w="70%">
                 <SimpleGrid columns={{base: 1, lg: 3}} gap={6} mb={8}>
