@@ -6,7 +6,7 @@ export default function Hero(): JSX.Element {
 		<Flex
 			id="hero"
 			alignItems="center"
-			backgroundImage="/hero.jpg"
+			backgroundImage="/hero.png"
 			backgroundPosition="center"
 			backgroundSize="cover"
 			justifyContent="center"
@@ -68,7 +68,8 @@ export default function Hero(): JSX.Element {
 						CHART
 					</Button>
 					<NavbarButton
-						label="About Us ------>"
+						hero
+						label="About Us"
 						target="about"
 					/>
 				</Flex>

@@ -27,14 +27,14 @@ export default function Tokenomics(): JSX.Element {
 	return (
 		<Flex
             id="tokenomics"
-            backgroundImage="/tokenomic-texture.png"
+            backgroundImage="/texture.png"
 			backgroundPosition="center"
 			backgroundSize="cover"
 			color="#FFFFFF"
 			flexDirection={{ base: "column", lg: "row" }}
 			h={{base: "full", lg: "100vh" }}
             w="100vw"
-			pt={24}
+			py={20}
 		>
 			<Text display={{base: "block", lg: "none" }} textAlign="center" fontWeight="extrabold">SUPPLY DISTRIBUTION</Text>
 			<Heading display={{base: "block", lg: "none" }} textAlign="center" fontFamily="Silkscreen">

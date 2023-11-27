@@ -22,6 +22,7 @@ export default function Navbar(): JSX.Element {
 			position="fixed"
 			w="100%"
 			zIndex={10}
+			py={{base: 4, lg: 2}}
 		>
 			<Image
 				_hover={{ cursor: "pointer" }}
@@ -29,9 +30,10 @@ export default function Navbar(): JSX.Element {
 					const targetSection: HTMLElement | null = document.getElementById("hero");
 					if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
 				}}
-				src="/logo.png"
-				h="80%"
-				w="auto"
+				src="/logo.svg"
+				h="100%"
+				w={{base: "25%", lg: "15%"}}
+				ml={{base: 4, lg: 2}}
 			/>
 			<Flex
 				alignItems="center"
@@ -66,9 +68,11 @@ export default function Navbar(): JSX.Element {
 							const targetSection: HTMLElement | null = document.getElementById("hero");
 							if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
 						}}
-						src="/logo.png"
+						src="/logo.svg"
 						h="auto"
 						w="25%"
+						mt={4}
+						ml={4}
 					/>
 					<DrawerCloseButton />
 					<DrawerBody as={Flex} alignItems="space-between" justifyContent="center">

@@ -43,7 +43,7 @@ export default function Story(): JSX.Element {
 			flexDirection="column"
 			justifyContent="flex-start"
 			w="full"
-			py={24}
+			py={20}
 		>
 			<Text fontWeight="extrabold">THE STORY</Text>
 			<Heading fontFamily="Silkscreen">WELCOME TO THE<br />WORLD OF DAGA</Heading>
@@ -51,7 +51,7 @@ export default function Story(): JSX.Element {
 				columns={{base: 1, lg: 3 }}
                 gap={5}
                 w="80%"
-				pb={8}
+				py={12}
 			>
 				{cards.map((card: { image: string; title: string; description: string }, index: number) => {
 					return (
@@ -64,16 +64,21 @@ export default function Story(): JSX.Element {
                             justifySelf="center"
                             p={0}
 							pb={4}
+							minH="100%"
+							minW="100%"
 						>
 							<Image
 								borderTopRadius="10px"
 								src={card.image}
 								mb={4}
+								h="60%"
 							/>
 							<Flex
 								flexDirection="column"
 								gap={4}
 								px={3}
+								pt={10}
+								pb={6}
 							>
 								<Heading fontSize="1.1rem" fontFamily="Silkscreen">{card.title}</Heading>
 								<Text>{card.description}</Text>
