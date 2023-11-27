@@ -32,7 +32,7 @@ export default function Navbar(): JSX.Element {
 				}}
 				src="/logo.svg"
 				h="100%"
-				w={{base: "25%", lg: "15%"}}
+				w={{base: "25%", lg: "10%"}}
 				ml={{base: 4, lg: 2}}
 			/>
 			<Flex

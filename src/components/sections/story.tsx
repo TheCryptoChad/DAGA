@@ -43,7 +43,8 @@ export default function Story(): JSX.Element {
 			flexDirection="column"
 			justifyContent="flex-start"
 			w="full"
-			py={20}
+			pb={20}
+			pt={{base: 20, lg: 0}}
 		>
 			<Text fontWeight="extrabold">THE STORY</Text>
 			<Heading fontFamily="Silkscreen">WELCOME TO THE<br />WORLD OF DAGA</Heading>

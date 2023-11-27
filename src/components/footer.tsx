@@ -16,7 +16,8 @@ export default function Footer(): JSX.Element {
         <Flex
             bg="#000000"
             flexDirection="column"
-            py={{base: 10, lg: 5}}
+            pt={14}
+            pb={{base: 10, lg: 5}}
             alignItems="center"
             color="#FFFFFF"
         >
