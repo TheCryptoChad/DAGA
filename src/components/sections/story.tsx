@@ -10,7 +10,7 @@ export default function Story(): JSX.Element {
 		{
 			image: "/card2.png",
 			title: "WRITE THE STORY",
-			description: "Buy $DAGA for becoming a citizen. DAGA storytelling will be written by the community and the milestones reached.",
+			description: "Buy $DAGA to gain citizenship. The narrative of DAGA will be shaped through the achievement of milestones and the active involvement of the community.",
 		},
 		{
 			image: "/card3.png",
@@ -20,7 +20,7 @@ export default function Story(): JSX.Element {
 		{
 			image: "/card4.png",
 			title: "SEPPUKU",
-			description: "Tax system by which citizens who sell $DAGA, do so by sacrificing 5% of the ETH that goes to the DAGA staking contract.",
+			description: "A taxation system wherein citizens selling $DAGA contribute 5% of the corresponding ETH to the DAGA staking contract as a sacrifice.",
 		},
 		{
 			image: "/card5.png",
