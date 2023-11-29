@@ -58,7 +58,7 @@ export default function Footer(): JSX.Element {
 
                     <Heading textAlign="center" display={{base: "block", lg: "none"}} fontWeight="extrabold" fontSize="1.2rem">Follow Us On</Heading>
                     <Flex justifyContent={{base: "center", lg: "flex-start"}} display={{base: "flex", lg: "none"}} gap={3}>
-                        <IconButton isDisabled onClick={() => window.location.href = "https://www.twitter.com/DAGA"} aria-label="twitter" icon={<Image src="/twitter.jpg" h="full" borderRadius="4px" />} />
+                        <IconButton onClick={() => window.location.href = "https://www.twitter.com/daga_coin"} aria-label="twitter" icon={<Image src="/twitter.jpg" h="full" borderRadius="4px" />} />
                         <IconButton isDisabled onClick={() => window.location.href = "https://www.t.me/DAGA"} aria-label="twitter" icon={<Image src="/telegram.jpg" h="full" borderRadius="4px" />} />
                     </Flex>
                 </SimpleGrid>

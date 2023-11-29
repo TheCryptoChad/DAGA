@@ -22,9 +22,9 @@ export default function Hero(): JSX.Element {
 				color="#FFFFFF"
 			>
 				<Text fontSize="2.2rem">
-					the scalable
+					ai driven,
 					<br />
-					financial gamified
+					scalable gamified 
 					<br />
 					project
 				</Text>
@@ -32,6 +32,7 @@ export default function Hero(): JSX.Element {
 					welcome to the most innovative and
 					<br />
 					vibrant crypto experience
+					<br />
 					<br />
 					welcome to daga
 				</Text>

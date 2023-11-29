@@ -12,8 +12,8 @@ export default function Layout(props: LayoutProps): JSX.Element {
     return (
         <Fragment>
             <Head>
-                <title>DAGA - Scalable Financial Gamified Token</title>
-                <meta name="description" content="DAGA is a scalable, financial, gamified project." />
+                <title>DAGA - AI-driven, scalable, gamified project</title>
+                <meta name="description" content="DAGA is an AI-driven, scalable, gamified project." />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Flex 
