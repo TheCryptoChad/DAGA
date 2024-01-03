@@ -3,23 +3,33 @@ import { Box, CircularProgress, Flex, Heading, Image, Text } from '@chakra-ui/re
 export default function Tokenomics(): JSX.Element {
 	const allocations: { color: string; percentage: number; description: string }[] = [
 		{
-			color: '#F2BD21',
-			percentage: 85,
+			color: '#EFBD40',
+			percentage: 50,
 			description: 'UNISWAP LP',
 		},
 		{
-			color: '#F4981C',
+			color: '#F09937',
+			percentage: 10,
+			description: 'SEED ROUND',
+		},
+		{
+			color: '#F05D15',
+			percentage: 20,
+			description: 'COMMUNITY ROUND',
+		},
+		{
+			color: '#DA3B26',
 			percentage: 5,
 			description: 'PARTNERSHIPS - CEX LIQUIDITY',
 		},
 		{
-			color: '#F05D15',
-			percentage: 6,
+			color: '#A62B17',
+			percentage: 8,
 			description: 'BUSINESS DEVELOPMENT',
 		},
 		{
-			color: '#DF3413',
-			percentage: 4,
+			color: '#7E1E0F',
+			percentage: 7,
 			description: 'MARKETING FUND',
 		},
 	];
@@ -69,24 +79,40 @@ export default function Tokenomics(): JSX.Element {
 					<CircularProgress
 						size='xs'
 						trackColor='transparent'
-						value={85}
-						color='#F2BD21'
+						value={50}
+						color='#EFBD40'
+						position='absolute'
+						zIndex={6}
+					/>
+					<CircularProgress
+						size='xs'
+						trackColor='transparent'
+						value={60}
+						color='#F09937'
+						position='absolute'
+						zIndex={5}
+					/>
+					<CircularProgress
+						size='xs'
+						trackColor='transparent'
+						value={80}
+						color='#F05D15'
 						position='absolute'
 						zIndex={4}
 					/>
 					<CircularProgress
 						size='xs'
 						trackColor='transparent'
-						value={90}
-						color='#F4981C'
+						value={85}
+						color='#DA3B26'
 						position='absolute'
 						zIndex={3}
 					/>
 					<CircularProgress
 						size='xs'
 						trackColor='transparent'
-						value={96}
-						color='#F05D15'
+						value={93}
+						color='#A62B17'
 						position='absolute'
 						zIndex={2}
 					/>
@@ -94,7 +120,7 @@ export default function Tokenomics(): JSX.Element {
 						size='xs'
 						trackColor='transparent'
 						value={100}
-						color='#DF3413'
+						color='#7E1E0F'
 						position='absolute'
 						zIndex={1}
 					/>
@@ -133,14 +159,24 @@ export default function Tokenomics(): JSX.Element {
 							justifyContent='space-evenly'
 							flexWrap='wrap'
 							fontFamily='Silkscreen'
-							gap={2}
+							gap={5}
 						>
 							<Box
 								h='15px'
 								w='15px'
 								bg={allocation.color}
 							/>
-							<Text>{allocation.percentage}%</Text>
+							<Box>
+								{allocation.percentage < 10 && (
+									<Text
+										display='inline'
+										textColor='transparent'
+									>
+										0
+									</Text>
+								)}
+								{allocation.percentage}%
+							</Box>
 							<Text flex={1}>{allocation.description}</Text>
 						</Flex>
 					);
