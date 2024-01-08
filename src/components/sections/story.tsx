@@ -10,8 +10,7 @@ export default function Story(): JSX.Element {
 		{
 			image: '/card2.png',
 			title: 'WRITE THE STORY',
-			description:
-				'Buy $DAGA to gain citizenship. The narrative of DAGA will be shaped through the achievement of milestones and the active involvement of the community.',
+			description: 'Buy $DAGA to gain citizenship. The narrative of DAGA will be shaped through the achievement of milestones and the active involvement of the community.',
 		},
 		{
 			image: '/card3.png',
@@ -82,7 +81,7 @@ export default function Story(): JSX.Element {
 								borderTopRadius='10px'
 								src={card.image}
 								mb={4}
-								h='50%'
+								minH='50%'
 							/>
 							<Flex
 								flexDirection='column'
